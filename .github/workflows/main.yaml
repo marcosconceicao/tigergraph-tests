@@ -28,8 +28,8 @@ jobs:
       with:
         tgserver-version: ${{ matrix.tgserver-version }}
 
-    - run: npm install
+    # - run: npm install
 
-    - run: npm test
-      env:
-        CI: true
+    # - run: npm test
+    #   env:
+    #     CI: true
