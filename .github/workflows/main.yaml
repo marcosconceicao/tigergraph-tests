@@ -13,6 +13,11 @@ jobs:
     - name: Git checkout
       uses: actions/checkout@v3
 
+    - name: Cache Docker images.
+      uses: ScribeMD/docker-cache@0.2.6
+      with:
+        key: docker-${{ runner.os }}-${{ hashFiles(**) }}
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:

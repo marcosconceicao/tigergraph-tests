@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios').default;
 
 axios.get('http://localhost:14240/api/ping')
   .then(function (response) {
@@ -10,7 +10,7 @@ axios.get('http://localhost:14240/api/ping')
     console.log(error);
   })
   .finally(function () {
-    // always executed
+    console.log('Finally ping')
 });
 
 axios.get('http://localhost:9000/version')
@@ -23,5 +23,5 @@ axios.get('http://localhost:9000/version')
     console.log(error);
   })
   .finally(function () {
-    // always executed
+    console.log('Finally version')
 });
