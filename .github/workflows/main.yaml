@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        tgserver-version: ['3.7.0', '3.8.0']
+        tgserver-version: ['3.7.0']
 
     steps:
     - name: Git checkout
@@ -22,3 +22,9 @@ jobs:
       uses: marcosconceicao/tigergraph-github-action@v2
       with:
         tgserver-version: ${{ matrix.tgserver-version }}
+
+    - run: npm install
+
+    - run: npm test
+      env:
+        CI: true

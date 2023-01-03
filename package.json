@@ -1,0 +1,22 @@
+{
+  "name": "tigergraph-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosconceicao/tigergraph-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosconceicao/tigergraph-tests/issues"
+  },
+  "homepage": "https://github.com/marcosconceicao/tigergraph-tests#readme",
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
+}
